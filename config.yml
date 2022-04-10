@@ -11,8 +11,8 @@ sdk_path: /usr/lib/android-sdk
 # The same policy is applied to the archive repo, if there is one.
 # repo_maxage: 0
 
-repo_url: https://skyemk.github.io/privacy-tool-repo
-repo_name: Privacy Tool Repo
+repo_url: "https://skyemk.github.io/fdroid-tool/"
+repo_name: "Privacy Tool Repo"
 repo_description: """Privacy oriented app collection"""
 
 repo_icon = "fdroid-icon.png"
