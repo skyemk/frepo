@@ -1,0 +1,43 @@
+# Copy this file to config.yml, then amend the settings below according to
+# your system configuration.
+
+# Custom path to the Android SDK, defaults to $ANDROID_HOME
+sdk_path: /usr/lib/android-sdk
+
+# Set the maximum age (in days) of an index that a client should accept from
+# this repo. Setting it to 0 or not setting it at all disables this
+# functionality. If you do set this to a non-zero value, you need to ensure
+# that your index is updated much more frequently than the specified interval.
+# The same policy is applied to the archive repo, if there is one.
+# repo_maxage: 0
+
+repo_url: https://skyemk.github.io/privacy-tool-repo
+repo_name: Privacy Tool Repo
+repo_description: """Privacy oriented app collection"""
+
+repo_icon = "fdroid-icon.png"
+archive_older = 0
+
+repo_keyalias: cs-723813308273-default
+
+keystore: keystore.p12
+
+# You should not need to change these at all, unless you have a very
+# customized setup for using smartcards in Java with keytool/jarsigner
+# smartcardoptions: |
+#   -storetype PKCS11 -providerName SunPKCS11-OpenSC
+#   -providerClass sun.security.pkcs11.SunPKCS11
+#   -providerArg opensc-fdroid.cfg
+
+# The password for the keystore (at least 6 characters). If this password is
+# different than the keypass below, it can be OK to store the password in this
+# file for real use. But in general, sensitive passwords should not be stored
+# in text files!
+keystorepass: V7fR3YtTJZiVGWyMkQm9qLb4l0F27/3f3zaWi6ibv7k=
+
+keypass: V7fR3YtTJZiVGWyMkQm9qLb4l0F27/3f3zaWi6ibv7k=
+
+# The distinguished name used for all keys.
+keydname: CN=cs-723813308273-default, OU=F-Droid
+
+apksigner: /usr/bin/apksigner
